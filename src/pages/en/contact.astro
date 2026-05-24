@@ -1,0 +1,491 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Контакты — AMMA Russia"
+  description="Свяжитесь с ВсеМосковской Малаяльской Ассоциацией (AMMA Russia). Email, телефон, адрес, социальные сети."
+  lang="en"
+>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="/en/" class="navbar__logo">
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
+        <circle cx="21" cy="21" r="21" fill="#C41020"/>
+        <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
+        <text x="21" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Georgia">A</text>
+      </svg>
+      <span class="navbar__logo-text">AMMA Russia</span>
+    </a>
+    <nav class="navbar__nav" id="navLinks">
+      <a href="/en/#about" class="navbar__link">About Onam</a>
+      <a href="/en/#event" class="navbar__link">Event</a>
+      <a href="/en/#artist" class="navbar__link">Artist</a>
+      <a href="/en/committee" class="navbar__link">Committee</a>
+      <a href="/en/contact" class="navbar__link navbar__link--active">Contact</a>
+    </nav>
+    <button class="navbar__burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <div class="page-hero__gradient"></div>
+    <div class="page-hero__glow"></div>
+  </div>
+  <div class="container page-hero__content">
+    <div class="page-hero__badge reveal">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Get in touch with us
+    </div>
+    <h1 class="page-hero__title reveal" style="transition-delay:0.1s">
+      Contact<br/><span class="gold-text">Information</span>
+    </h1>
+    <p class="page-hero__subtitle reveal" style="transition-delay:0.2s">
+      We always welcome new participants and guests.<br/>
+      Contact us in any convenient way.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT CARDS -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="contact-cards">
+
+      <div class="contact-card reveal" style="transition-delay:0.05s">
+        <div class="contact-card__icon contact-card__icon--email">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="contact-card__content">
+          <h2 class="contact-card__title">Email</h2>
+          <p class="contact-card__subtitle">Primary address</p>
+          <a href="mailto:ammarussia@mail.ru" class="contact-card__value">ammarussia@mail.ru</a>
+          <p class="contact-card__note">We will respond within 24 hours</p>
+        </div>
+      </div>
+
+      <div class="contact-card reveal" style="transition-delay:0.1s">
+        <div class="contact-card__icon contact-card__icon--phone">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+        </div>
+        <div class="contact-card__content">
+          <h2 class="contact-card__title">Phone</h2>
+          <p class="contact-card__subtitle">Call during business hours</p>
+          <div class="contact-card__phones">
+            <a href="tel:+798****0221" class="contact-card__phone">
+              <strong>Dr. Binu Paniker</strong>
+              <span>+7 985 130 0221</span>
+            </a>
+            <a href="tel:+792****7066" class="contact-card__phone">
+              <strong>Dr. Unnikrishnan</strong>
+              <span>+7 925 385 7066</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal" style="transition-delay:0.15s">
+        <div class="contact-card__icon contact-card__icon--telegram">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </div>
+        <div class="contact-card__content">
+          <h2 class="contact-card__title">Telegram</h2>
+          <p class="contact-card__subtitle">Quick responses and announcements</p>
+          <a href="https://t.me/moscowamma" target="_blank" rel="noopener" class="contact-card__value">@moscowamma</a>
+          <p class="contact-card__note">Click to open the chat</p>
+        </div>
+      </div>
+
+      <div class="contact-card reveal" style="transition-delay:0.2s">
+        <div class="contact-card__icon contact-card__icon--instagram">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="contact-card__content">
+          <h2 class="contact-card__title">Instagram</h2>
+          <p class="contact-card__subtitle">Photos and videos from events</p>
+          <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener" class="contact-card__value">@amma4_moscow</a>
+          <p class="contact-card__note">Follow us</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL SECTION -->
+<section class="section social-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label-row section-label-row--light">
+        <span class="section-label-line section-label-line--light"></span>
+        <span class="section-label section-label--light">We on Social Media</span>
+      </div>
+      <h2 class="section-title section-title--light">Join <span class="gold-text">Us</span></h2>
+      <div class="ornament ornament--light"><span class="ornament-icon">&#10022;</span></div>
+      <p class="section-subtitle section-subtitle--light">
+        Follow event announcements, watch photos and videos<br/>
+        from our festivals and stay updated on diaspora life
+      </p>
+    </div>
+
+    <div class="social-grid">
+      <a href="https://t.me/moscowamma" class="social-tile social-tile--telegram reveal" target="_blank" rel="noopener">
+        <div class="social-tile__icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </div>
+        <div class="social-tile__content">
+          <h3>Telegram</h3>
+          <p>@moscowamma</p>
+        </div>
+        <div class="social-tile__arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="https://www.instagram.com/amma4_moscow" class="social-tile social-tile--instagram reveal" style="transition-delay:0.1s" target="_blank" rel="noopener">
+        <div class="social-tile__icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="social-tile__content">
+          <h3>Instagram</h3>
+          <p>@amma4_moscow</p>
+        </div>
+        <div class="social-tile__arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#" class="social-tile social-tile--facebook reveal" style="transition-delay:0.2s" target="_blank" rel="noopener">
+        <div class="social-tile__icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </div>
+        <div class="social-tile__content">
+          <h3>Facebook</h3>
+          <p>AMMA Moscow</p>
+        </div>
+        <div class="social-tile__arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a href="#" class="social-tile social-tile--youtube reveal" style="transition-delay:0.3s" target="_blank" rel="noopener">
+        <div class="social-tile__icon">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"/></svg>
+        </div>
+        <div class="social-tile__content">
+          <h3>YouTube</h3>
+          <p>AMMA Russia</p>
+        </div>
+        <div class="social-tile__arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE INFO -->
+<section class="section section--cream venue-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label-row">
+        <span class="section-label-line"></span>
+        <span class="section-label">Venue</span>
+      </div>
+      <h2 class="section-title">How to <span class="gold-text">Find Us</span></h2>
+      <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
+    </div>
+
+    <div class="venue-grid reveal">
+      <div class="venue-info">
+        <div class="venue-info__card">
+          <div class="venue-info__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <strong>Vdokhnoveniye Cultural Center</strong>
+            <span>Moscow, 7 Litovsky Boulevard</span>
+            <span>Yasenevo Metro — 7 min walk</span>
+          </div>
+        </div>
+
+        <div class="venue-info__card">
+          <div class="venue-info__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <div>
+            <strong>Opening Hours</strong>
+            <span>Events: from 17:00</span>
+            <span>Entry by invitation</span>
+          </div>
+        </div>
+
+        <div class="venue-info__card">
+          <div class="venue-info__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <strong>Entry Contact</strong>
+            <span>Show your invitation at the entrance</span>
+            <span>Coordination: +7 985 130 0221</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="venue-map">
+        <div class="venue-map__placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Map</p>
+          <a href="https://yandex.ru/maps/-/CCUBJ0wJxD" target="_blank" rel="noopener" class="btn btn--primary">
+            Open in Yandex Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="48" height="48" viewBox="0 0 42 42" fill="none">
+              <circle cx="21" cy="21" r="21" fill="#C41020"/>
+              <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
+              <text x="21" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Georgia">A</text>
+            </svg>
+            <div>
+              <strong>AMMA Russia</strong>
+              <span>All-Moscow Malayalee Association</span>
+            </div>
+          </div>
+          <p class="footer__desc">
+            Uniting members of the Kerala diaspora in Moscow, preserving and promoting
+            the rich cultural heritage of Malabar since 2015.
+          </p>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Navigation</h4>
+          <a href="/en/#about">About Onam</a>
+          <a href="/en/#event">Event</a>
+          <a href="/en/#artist">Artist</a>
+          <a href="/en/committee">Committee</a>
+          <a href="/en/contact">Contact</a>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Contacts</h4>
+          <a href="mailto:ammarussia@mail.ru">ammarussia@mail.ru</a>
+          <a href="tel:+798****0221">+7 985 130 0221</a>
+          <a href="https://t.me/moscowamma" target="_blank" rel="noopener">@moscowamma</a>
+          <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">@amma4_moscow</a>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Social Media</h4>
+          <a href="https://t.me/moscowamma" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 AMMA Russia — All-Moscow Malayalee Association. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</Layout>
+
+<style>
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 18px 0; transition: all 0.4s ease;
+}
+.navbar.scrolled {
+  background: rgba(10,10,10,0.93); backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 32px rgba(0,0,0,0.35); padding: 10px 0;
+}
+.navbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.navbar__logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; }
+.navbar__logo-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
+.navbar__nav { display: flex; gap: 4px; align-items: center; }
+.navbar__link {
+  color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem;
+  font-weight: 600; padding: 7px 14px; border-radius: 20px; transition: all 0.3s ease;
+}
+.navbar__link:hover { color: white; background: rgba(255,255,255,0.1); }
+.navbar__link--active { color: white; background: rgba(255,255,255,0.12); }
+.navbar__burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.navbar__burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
+.navbar__burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.navbar__burger.open span:nth-child(2) { opacity: 0; }
+.navbar__burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.page-hero {
+  position: relative; min-height: 50vh; display: flex; align-items: center;
+  padding: 140px 0 80px; overflow: hidden;
+}
+.page-hero__bg { position: absolute; inset: 0; z-index: 0; }
+.page-hero__gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #1a0505 0%, #2a0a0a 40%, #1B4332 100%);
+}
+.page-hero__glow {
+  position: absolute; width: 500px; height: 500px; top: -150px; right: -100px;
+  background: radial-gradient(circle, rgba(196,16,32,0.2) 0%, transparent 70%);
+  border-radius: 50%; filter: blur(80px);
+}
+.page-hero__content { position: relative; z-index: 1; }
+.page-hero__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(212,168,67,0.15); border: 1px solid rgba(212,168,67,0.3);
+  color: var(--gold-light); padding: 7px 16px; border-radius: 50px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.page-hero__title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; color: white; margin-bottom: 16px; line-height: 1.05; }
+.page-hero__subtitle { font-size: clamp(0.95rem, 2vw, 1.1rem); color: rgba(255,255,255,0.7); max-width: 520px; line-height: 1.7; }
+
+.section-label-row { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.section-label-line { width: 36px; height: 2px; background: var(--gold); border-radius: 1px; flex-shrink: 0; }
+.section-label-line--light { background: rgba(212,168,67,0.6); }
+.section-label--light { color: rgba(212,168,67,0.8); }
+
+/* Contact cards */
+.contact-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.contact-card {
+  background: white; border-radius: 20px; padding: 36px 32px;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(212,168,67,0.15);
+  transition: var(--transition); display: flex; gap: 24px; align-items: flex-start;
+}
+.contact-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); border-color: rgba(212,168,67,0.3); }
+.contact-card__icon {
+  width: 60px; height: 60px; border-radius: 16px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.contact-card__icon--email { background: rgba(196,16,32,0.08); color: var(--crimson); }
+.contact-card__icon--phone { background: rgba(27,67,50,0.08); color: var(--forest); }
+.contact-card__icon--telegram { background: rgba(0,136,204,0.08); color: #0088cc; }
+.contact-card__icon--instagram { background: rgba(196,48,91,0.08); color: #C4305B; }
+.contact-card__title { font-size: 1.1rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.contact-card__subtitle { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.contact-card__value {
+  display: block; color: var(--crimson); text-decoration: none;
+  font-weight: 700; font-size: 1rem; transition: var(--transition);
+}
+.contact-card__value:hover { color: var(--deep-burgundy); }
+.contact-card__note { font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; }
+.contact-card__phones { display: flex; flex-direction: column; gap: 8px; }
+.contact-card__phone {
+  display: flex; flex-direction: column; text-decoration: none;
+  color: var(--text-dark); transition: var(--transition);
+}
+.contact-card__phone:hover { color: var(--crimson); }
+.contact-card__phone strong { font-size: 0.82rem; font-weight: 700; }
+.contact-card__phone span { font-size: 0.95rem; font-weight: 600; }
+
+/* Social section */
+.social-section { background: linear-gradient(160deg, #0D2B1A 0%, #1B4332 100%); }
+.social-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.social-tile {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px; padding: 28px 22px;
+  display: flex; align-items: center; gap: 14px;
+  color: white; text-decoration: none; transition: var(--transition);
+  backdrop-filter: blur(12px);
+}
+.social-tile:hover { background: rgba(255,255,255,0.12); transform: translateY(-4px); border-color: rgba(212,168,67,0.3); }
+.social-tile__icon { flex-shrink: 0; }
+.social-tile--telegram:hover { border-color: rgba(0,136,204,0.5); }
+.social-tile--instagram:hover { border-color: rgba(196,48,91,0.5); }
+.social-tile--facebook:hover { border-color: rgba(66,103,178,0.5); }
+.social-tile--youtube:hover { border-color: rgba(255,0,0,0.5); }
+.social-tile__content { flex: 1; }
+.social-tile__content h3 { font-size: 1rem; font-weight: 700; margin-bottom: 2px; }
+.social-tile__content p { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+.social-tile__arrow { color: rgba(255,255,255,0.3); transition: var(--transition); }
+.social-tile:hover .social-tile__arrow { color: var(--gold); transform: translateX(4px); }
+
+/* Venue */
+.venue-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.venue-info { display: flex; flex-direction: column; gap: 20px; }
+.venue-info__card {
+  display: flex; align-items: flex-start; gap: 16px;
+  background: white; border-radius: 16px; padding: 24px;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(212,168,67,0.12);
+}
+.venue-info__icon {
+  width: 48px; height: 48px; border-radius: 12px;
+  background: rgba(196,16,32,0.08); color: var(--crimson);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.venue-info__card div { display: flex; flex-direction: column; gap: 4px; }
+.venue-info__card strong { font-size: 0.95rem; color: var(--text-dark); font-weight: 700; }
+.venue-info__card span { font-size: 0.85rem; color: var(--text-muted); }
+.venue-map__placeholder {
+  background: linear-gradient(135deg, var(--cream) 0%, white 100%);
+  border-radius: 20px; padding: 60px 40px;
+  text-align: center; border: 1px solid rgba(212,168,67,0.15);
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+}
+.venue-map__placeholder svg { color: var(--gold); }
+.venue-map__placeholder p { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text-dark); }
+
+/* Footer */
+.footer { background: #0a0a0a; color: rgba(255,255,255,0.5); }
+.footer__top { padding: 60px 0 40px; }
+.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+.footer__logo { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.footer__logo strong { display: block; color: white; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+.footer__logo span { display: block; font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 600; }
+.footer__desc { font-size: 0.88rem; line-height: 1.7; max-width: 340px; }
+.footer__links-group h4 { font-family: 'Nunito', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 16px; }
+.footer__links-group a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.88rem; padding: 4px 0; transition: var(--transition); }
+.footer__links-group a:hover { color: white; }
+.footer__bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0; font-size: 0.8rem; }
+.footer__bottom p { color: rgba(255,255,255,0.3); }
+
+@media (max-width: 1024px) {
+  .social-grid { grid-template-columns: repeat(2, 1fr); }
+  .venue-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .navbar__nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.97); flex-direction: column; align-items: center; justify-content: center; gap: 24px; z-index: 999; }
+  .navbar__nav.open { display: flex; }
+  .navbar__link { font-size: 1.2rem; }
+  .navbar__burger { display: flex; z-index: 1001; }
+  .contact-cards { grid-template-columns: 1fr; }
+  .contact-card { flex-direction: column; align-items: center; text-align: center; }
+  .social-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+}
+</style>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar?.classList.toggle('scrolled', window.scrollY > 60); });
+const burgerBtn = document.getElementById('burgerBtn');
+const navLinks = document.getElementById('navLinks');
+burgerBtn?.addEventListener('click', () => {
+  const isOpen = navLinks?.classList.toggle('open');
+  burgerBtn?.classList.toggle('open', isOpen);
+  burgerBtn?.setAttribute('aria-expanded', String(isOpen));
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+</script>

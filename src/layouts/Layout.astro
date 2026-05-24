@@ -1,0 +1,382 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const {
+  title = 'AMMA Russia — All-Moscow Malayalee Association',
+  description = 'Official website of the All-Moscow Malayalee Association (AMMA). Cultural events, Kerala festivals, Indian culture in Moscow.',
+  lang = 'ru',
+} = Astro.props;
+
+// Default = English (index), Russian is /en/
+const isRussian = lang === 'ru';
+const isEnglish = lang === 'en';
+const currentPath = Astro.url.pathname.replace('/amma', '');
+
+// Language switcher: if on /en/ page → Russian version, else → English version
+const otherLang = isRussian ? 'en' : 'ru';
+const otherLangLabel = isRussian ? 'EN' : 'RU';
+// Determine the other path (flip the logic: index = English, en/ = Russian)
+let otherPath = '/en/';
+if (currentPath.startsWith('/en/')) {
+  otherPath = currentPath.replace('/en/', '/');
+} else if (currentPath === '/' || currentPath.startsWith('/committee') || currentPath.startsWith('/contact')) {
+  otherPath = currentPath === '/' ? '/en/' : '/en' + currentPath;
+}
+
+const navLinks = isRussian
+  ? [
+      { href: '#about', label: 'О Онам' },
+      { href: '#event', label: 'Мероприятие' },
+      { href: '#artist', label: 'Артист' },
+      { href: '/en/committee', label: 'Комитет' },
+      { href: '/en/contact', label: 'Контакты' },
+    ]
+  : [
+      { href: '/en/#about', label: 'About Onam' },
+      { href: '/en/#event', label: 'Event' },
+      { href: '/en/#artist', label: 'Artist' },
+      { href: '/en/committee', label: 'Committee' },
+      { href: '/en/contact', label: 'Contact' },
+    ];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#C41020" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" hreflang={otherLang} href={otherPath} />
+    <link rel="canonical" href={`https://mosmates.ru/amma${currentPath}`} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={`https://mosmates.ru/amma${currentPath}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={isRussian ? 'ru_RU' : 'en_US'} />
+    <meta property="og:site_name" content="AMMA Russia" />
+    <meta property="og:image" content="https://mosmates.ru/amma/favicon.svg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://mosmates.ru/amma/favicon.svg" />
+
+    <!-- Organization JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AMMA Russia — ВсеМосковская Малаяльская Ассоциация",
+        "alternateName": "All-Moscow Malayalee Association",
+        "url": "https://mosmates.ru/amma",
+        "logo": "https://mosmates.ru/amma/favicon.svg",
+        "description": "ВсеМосковская Малаяльская Ассоциация (AMMA Russia) — объединение диаспоры Кералы в Москве. Организуем культурные мероприятия, праздники Онэм, сохраняем традиции и культуру Малабара с 2015 года.",
+        "foundingDate": "2015",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Москва",
+          "addressCountry": "RU"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+7-985-130-0221",
+            "contactType": "general",
+            "email": "ammarussia@mail.ru"
+          }
+        ],
+        "sameAs": [
+          "https://t.me/moscowamma",
+          "https://www.instagram.com/amma4_moscow",
+          "https://www.facebook.com/moscowamma"
+        ]
+      }
+    </script>
+
+    <title>{title}</title>
+
+    <style is:global>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --crimson: #C41020;
+        --deep-burgundy: #8B0000;
+        --gold: #D4A843;
+        --gold-light: #F0D78C;
+        --cream: #FFF8F0;
+        --warm-white: #FFFCF7;
+        --forest: #1B4332;
+        --forest-light: #2D6A4F;
+        --text-dark: #1A1A1A;
+        --text-body: #3D2B1F;
+        --text-muted: #6B5344;
+        --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+        --shadow-md: 0 4px 24px rgba(0,0,0,0.10);
+        --shadow-lg: 0 8px 48px rgba(0,0,0,0.14);
+        --radius-sm: 8px;
+        --radius-md: 16px;
+        --radius-lg: 24px;
+        --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      html { scroll-behavior: smooth; font-size: 16px; }
+
+      body {
+        font-family: 'Nunito', 'Georgia', serif;
+        background: var(--warm-white);
+        color: var(--text-body);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: var(--cream); }
+      ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+      ::selection { background: var(--gold); color: white; }
+
+      h1, h2, h3, h4 { font-family: 'Playfair Display', 'Georgia', serif; line-height: 1.2; }
+      h1 { font-size: clamp(2.2rem, 5vw, 4rem); }
+      h2 { font-size: clamp(1.6rem, 3.5vw, 2.6rem); }
+      h3 { font-size: clamp(1.1rem, 2vw, 1.4rem); }
+
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+      .section { padding: 80px 0; }
+      .section--cream { background: var(--cream); }
+      .text-center { text-align: center; }
+      .gold-text { color: var(--gold); }
+
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(212,168,67,0.4); } 50% { box-shadow: 0 0 20px 6px rgba(212,168,67,0.2); } }
+      @keyframes pookalam-rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+      .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+
+      .btn {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 13px 30px; border-radius: 50px; font-size: 0.92rem;
+        font-weight: 700; text-decoration: none; cursor: pointer;
+        border: none; transition: var(--transition); font-family: inherit;
+        letter-spacing: 0.03em;
+      }
+      .btn--primary { background: var(--crimson); color: white; }
+      .btn--primary:hover { background: var(--deep-burgundy); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(196,16,32,0.35); }
+      .btn--gold { background: var(--gold); color: var(--text-dark); }
+      .btn--gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,67,0.4); }
+      .btn--outline { background: transparent; color: var(--crimson); border: 2px solid var(--crimson); }
+      .btn--outline:hover { background: var(--crimson); color: white; transform: translateY(-2px); }
+
+      .section-header { text-align: center; margin-bottom: 56px; }
+      .section-label {
+        display: inline-block; font-family: 'Nunito', sans-serif;
+        font-size: 0.78rem; font-weight: 700; letter-spacing: 0.2em;
+        text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+      }
+      .section-title { margin-bottom: 16px; color: var(--text-dark); }
+      .section-title--light { color: white; }
+      .section-subtitle { color: var(--text-muted); max-width: 600px; margin: 0 auto; font-size: 1.02rem; }
+      .section-subtitle--light { color: rgba(255,255,255,0.7); }
+
+      .ornament { display: flex; align-items: center; gap: 16px; margin: 16px auto; max-width: 280px; }
+      .ornament::before, .ornament::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+      .ornament-icon { color: var(--gold); font-size: 1.1rem; }
+
+      /* ── Language Toggle (Elegant Pill Slider) ── */
+      .lang-toggle {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        background: rgba(0,0,0,0.55);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 50px;
+        padding: 5px 6px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        gap: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.08);
+      }
+      .lang-toggle__slider {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+        width: calc(50% - 6px);
+        height: calc(100% - 10px);
+        border-radius: 50px;
+        background: linear-gradient(135deg, #C41020 0%, #8B0000 100%);
+        box-shadow: 0 2px 8px rgba(196,16,32,0.4);
+        transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                    box-shadow 0.35s ease;
+        pointer-events: none;
+        z-index: 0;
+      }
+      .lang-toggle__slider.is-russian {
+        transform: translateX(calc(100% + 0px));
+      }
+      .lang-toggle__btn {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 7px 14px;
+        border-radius: 50px;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        transition: color 0.3s ease;
+        font-family: 'Nunito', sans-serif;
+        min-width: 52px;
+      }
+      .lang-toggle__btn--en {
+        color: rgba(255,255,255,0.5);
+      }
+      .lang-toggle__btn--en.active {
+        color: #fff;
+      }
+      .lang-toggle__btn--ru {
+        color: rgba(255,255,255,0.5);
+      }
+      .lang-toggle__btn--ru.active {
+        color: #fff;
+      }
+      .lang-toggle__sep {
+        position: relative;
+        z-index: 1;
+        color: rgba(255,255,255,0.2);
+        font-size: 0.75rem;
+        font-weight: 300;
+        user-select: none;
+        line-height: 1;
+        margin: 0 2px;
+      }
+
+      /* Mobile: adjust toggle position when burger is visible */
+      @media (max-width: 768px) {
+        .lang-toggle {
+          top: 12px;
+          right: 64px;
+        }
+      }
+      @media (max-width: 480px) {
+        .lang-toggle {
+          top: 10px;
+          right: 58px;
+        }
+        .lang-toggle__btn {
+          padding: 6px 10px;
+          min-width: 44px;
+          font-size: 0.68rem;
+        }
+      }
+    </style>
+
+    <!-- Self-hosted fonts (no external CDN calls) -->
+    <style>
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/Nunito-400.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('/fonts/Nunito-600.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/Nunito-700.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url('/fonts/Nunito-800.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url('/fonts/Nunito-900.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('/fonts/PlayfairDisplay-400.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('/fonts/PlayfairDisplay-600.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url('/fonts/PlayfairDisplay-700.woff2') format('woff2');
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Language Toggle -->
+    <a href={otherPath} class="lang-toggle" aria-label="Switch language">
+      <div class={`lang-toggle__slider ${isRussian ? 'is-russian' : ''}`}></div>
+      <span class={`lang-toggle__btn lang-toggle__btn--en ${isEnglish ? 'active' : ''}`}>EN</span>
+      <span class="lang-toggle__sep">/</span>
+      <span class={`lang-toggle__btn lang-toggle__btn--ru ${isRussian ? 'active' : ''}`}>RU</span>
+    </a>
+
+    <slot />
+
+    <script is:inline>
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          var target = document.querySelector(this.getAttribute('href') || '');
+          if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,479 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Executive Committee — AMMA Russia"
+  description="Meet the leadership of the All-Moscow Malayalee Association. Patrons, president, vice-president, secretaries and committee members of AMMA."
+  lang="ru"
+>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="/" class="navbar__logo">
+      <img src="/images/amma-logo.png" alt="AMMA Russia" class="navbar__logo-img" />
+    </a>
+    <nav class="navbar__nav" id="navLinks">
+      <a href="/#about" class="navbar__link">О Онам</a>
+      <a href="/#event" class="navbar__link">Мероприятие</a>
+      <a href="/#artist" class="navbar__link">Артист</a>
+      <a href="/committee" class="navbar__link navbar__link--active">Комитет</a>
+      <a href="/contact" class="navbar__link">Контакты</a>
+    </nav>
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <div class="page-hero__gradient"></div>
+    <div class="page-hero__glow"></div>
+  </div>
+  <div class="container page-hero__content">
+    <div class="page-hero__badge reveal">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      ВсеМосковская Малаяльская Ассоциация
+    </div>
+    <h1 class="page-hero__title reveal" style="transition-delay:0.1s">
+      Исполнительный<br/><span class="gold-text">Комитет</span>
+    </h1>
+    <p class="page-hero__subtitle reveal" style="transition-delay:0.2s">
+      Команда единомышленников, которая организует культурные мероприятия,<br/>
+      поддерживает диаспору и сохраняет традиции Кералы в Москве
+    </p>
+    <div class="page-hero__term reveal" style="transition-delay:0.3s">
+      Срок полномочий: <strong>2025–2027</strong>
+    </div>
+  </div>
+</section>
+
+<!-- PATRON & PRESIDENT -->
+<section class="section section--cream leadership-section">
+  <div class="container">
+    <div class="leadership-grid">
+      <div class="leadership-card leadership-card--patron reveal">
+        <div class="leadership-card__badge leadership-card__badge--patron">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Покровитель
+        </div>
+        <div class="leadership-card__photo-wrap">
+          <img src="/images/cherian-ipan.jpg" alt="Д-р Чериан Ипан" class="leadership-card__photo" loading="lazy" />
+        </div>
+        <h2 class="leadership-card__name">Д-р Чериан Ипан</h2>
+        <p class="leadership-card__role">Покровитель</p>
+        <p class="leadership-card__desc">
+          Оказывает стратегическое руководство и поддержку ассоциации,
+          является связующим звеном с индийским сообществом в России.
+        </p>
+      </div>
+
+      <div class="leadership-card leadership-card--president reveal" style="transition-delay:0.1s">
+        <div class="leadership-card__badge leadership-card__badge--president">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Президент
+        </div>
+        <div class="leadership-card__photo-wrap">
+          <img src="/images/binu-paniker.jpg" alt="Д-р Бину Паникер" class="leadership-card__photo" loading="lazy" />
+        </div>
+        <h2 class="leadership-card__name">Д-р Бину Паникер</h2>
+        <p class="leadership-card__role">Президент</p>
+        <p class="leadership-card__desc">
+          Возглавляет ассоциацию, координирует деятельность всех членов комитета
+          и представляет АММА на официальных мероприятиях.
+        </p>
+        <div class="leadership-card__contact">
+          <a href="tel:+79851300221" class="leadership-card__contact-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            +7 985 130 0221
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECRETARIES & OFFICERS -->
+<section class="section officers-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label-row">
+        <span class="section-label-line"></span>
+        <span class="section-label">Руководство</span>
+      </div>
+      <h2 class="section-title section-title--light">Секретари и <span class="gold-text">вице-президент</span></h2>
+      <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
+    </div>
+
+    <div class="officers-grid">
+      {[
+        {
+          name: 'Д-р Уникришнан',
+          role: 'Вице-президент',
+          img: '/images/unnikrishnan.jpg',
+          desc: 'Координирует работу вице-президентов и курирует связи с диаспорой. Контакт для членских вопросов.',
+          phone: '+7 925 385 7066',
+        },
+        {
+          name: 'Д-р Нушад',
+          role: 'Генеральный секретарь',
+          img: '/images/nushad.jpg',
+          desc: 'Управляет текущей деятельностью ассоциации, организует заседания комитета и ведёт документацию.',
+          phone: null,
+        },
+        {
+          name: 'Д-р Лакшми Аравинд',
+          role: 'Культурный секретарь',
+          img: '/images/lakshmi-aravind.jpg',
+          desc: 'Организует культурные мероприятия, координирует танцевальные и музыкальные программы, фестивали.',
+          phone: null,
+        },
+        {
+          name: 'Г-н Вимал',
+          role: 'Финансовый секретарь',
+          img: '/images/vimal.jpg',
+          desc: 'Управляет финансами ассоциации, готовит бюджеты мероприятий и отчёты для комитета.',
+          phone: null,
+        },
+        {
+          name: 'Г-н Закария',
+          role: 'Совместный секретарь',
+          img: '/images/zakaria.jpg',
+          desc: 'Содействует генеральному секретарю, ведёт переписку и помогает в координации мероприятий.',
+          phone: null,
+        },
+      ].map((p, i) => (
+        <div class="officer-card reveal" style={`transition-delay:${i * 0.09}s`}>
+          <div class="officer-card__photo-wrap">
+            <img src={p.img} alt={p.name} class="officer-card__photo" loading="lazy" />
+          </div>
+          <div class="officer-card__content">
+            <h3 class="officer-card__name">{p.name}</h3>
+            <p class="officer-card__role">{p.role}</p>
+            <p class="officer-card__desc">{p.desc}</p>
+            {p.phone && (
+              <a href={`tel:${p.phone.replace(/\s/g,'')}`} class="officer-card__phone">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+                {p.phone}
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- EXECUTIVE COMMITTEE LIST -->
+<section class="section section--cream exec-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label-row">
+        <span class="section-label-line"></span>
+        <span class="section-label">Полный состав</span>
+      </div>
+      <h2 class="section-title">Исполнительный комитет <span class="gold-text">2025–2027</span></h2>
+      <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
+    </div>
+
+    <div class="exec-table reveal">
+      <div class="exec-table__header">
+        <span>Должность</span>
+        <span>Имя</span>
+      </div>
+      {[
+        ['Покровитель', 'Д-р Чериан Ипан'],
+        ['Президент', 'Д-р Бину Паникер'],
+        ['Генеральный секретарь', 'Д-р Нушад'],
+        ['Вице-президент', 'Д-р Уникришнан'],
+        ['Культурный секретарь', 'Д-р Лакшми Аравинд'],
+        ['Финансовый секретарь', 'Г-н Вимал'],
+        ['Совместный секретарь', 'Г-н Закария'],
+      ].map((row, i) => (
+        <div class="exec-table__row" style={`transition-delay:${i * 0.05}s`}>
+          <span class="exec-table__role">{row[0]}</span>
+          <span class="exec-table__name">{row[1]}</span>
+        </div>
+      ))}
+    </div>
+
+    <div class="exec-image reveal">
+      <img
+        src="/images/amma-association-executive-committee.jpg"
+        alt="Полный состав Исполнительного комитета АММА 2025-2027"
+        class="exec-image__img"
+        loading="lazy"
+      />
+      <p class="exec-image__caption">
+        Полный состав Исполнительного комитета АММА Russia 2025–2027
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="48" height="48" viewBox="0 0 42 42" fill="none">
+              <circle cx="21" cy="21" r="21" fill="#C41020"/>
+              <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
+              <text x="21" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Georgia">A</text>
+            </svg>
+            <div>
+              <strong>AMMA Russia</strong>
+              <span>ВсеМосковская Малаяльская Ассоциация</span>
+            </div>
+          </div>
+          <p class="footer__desc">
+            Объединяем представителей диаспоры Кералы в Москве, сохраняем и продвигаем
+            богатое культурное наследие Малабара с 2015 года.
+          </p>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Навигация</h4>
+          <a href="/#about">О Онам</a>
+          <a href="/#event">Мероприятие</a>
+          <a href="/#artist">Артист</a>
+          <a href="/committee">Комитет</a>
+          <a href="/contact">Контакты</a>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Контакты</h4>
+          <a href="mailto:ammarussia@mail.ru">ammarussia@mail.ru</a>
+          <a href="tel:+79851300221">+7 985 130 0221</a>
+          <a href="https://t.me/moscowamma" target="_blank" rel="noopener">@moscowamma</a>
+          <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">@amma4_moscow</a>
+        </div>
+
+        <div class="footer__links-group">
+          <h4>Социальные сети</h4>
+          <a href="https://t.me/moscowamma" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <p>&copy; 2025 AMMA Russia — ВсеМосковская Малаяльская Ассоциация. Все права защищены.</p>
+
+    </div>
+  </div>
+</footer>
+
+</Layout>
+
+<style>
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 18px 0; transition: all 0.4s ease;
+}
+.navbar.scrolled {
+  background: rgba(10,10,10,0.93); backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 2px 32px rgba(0,0,0,0.35); padding: 10px 0;
+}
+.navbar__inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+}
+.navbar__logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; }
+.navbar__logo-img { height: 42px; width: auto; }
+.navbar__logo-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
+.navbar__nav { display: flex; gap: 4px; align-items: center; }
+.navbar__link {
+  color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem;
+  font-weight: 600; padding: 7px 14px; border-radius: 20px; transition: all 0.3s ease;
+}
+.navbar__link:hover { color: white; background: rgba(255,255,255,0.1); }
+.navbar__link--active { color: white; background: rgba(255,255,255,0.12); }
+.navbar__burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
+.navbar__burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: var(--transition); }
+.navbar__burger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.navbar__burger.open span:nth-child(2) { opacity: 0; }
+.navbar__burger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.page-hero {
+  position: relative; min-height: 50vh; display: flex; align-items: center;
+  padding: 140px 0 80px; overflow: hidden;
+}
+.page-hero__bg { position: absolute; inset: 0; z-index: 0; }
+.page-hero__gradient {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #1a0505 0%, #2a0a0a 40%, #1B4332 100%);
+}
+.page-hero__glow {
+  position: absolute; width: 500px; height: 500px; top: -150px; right: -100px;
+  background: radial-gradient(circle, rgba(196,16,32,0.2) 0%, transparent 70%);
+  border-radius: 50%; filter: blur(80px);
+}
+.page-hero__content { position: relative; z-index: 1; }
+.page-hero__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(212,168,67,0.15); border: 1px solid rgba(212,168,67,0.3);
+  color: var(--gold-light); padding: 7px 16px; border-radius: 50px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.page-hero__title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900;
+  color: white; margin-bottom: 16px; line-height: 1.05;
+}
+.page-hero__subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.1rem); color: rgba(255,255,255,0.7);
+  max-width: 520px; line-height: 1.7; margin-bottom: 20px;
+}
+.page-hero__term {
+  font-size: 0.85rem; color: rgba(255,255,255,0.45); font-weight: 600;
+}
+.page-hero__term strong { color: var(--gold); }
+
+.section-label-row { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.section-label-line { width: 36px; height: 2px; background: var(--gold); border-radius: 1px; flex-shrink: 0; }
+
+/* Leadership cards */
+.leadership-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 900px; margin: 0 auto;
+}
+.leadership-card {
+  background: white; border-radius: 24px; padding: 40px 36px;
+  box-shadow: var(--shadow-md); text-align: center;
+  border: 1px solid rgba(212,168,67,0.15); transition: var(--transition);
+  position: relative; overflow: hidden;
+}
+.leadership-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+}
+.leadership-card--patron::before { background: linear-gradient(to right, var(--gold), var(--gold-light)); }
+.leadership-card--president::before { background: linear-gradient(to right, var(--crimson), var(--deep-burgundy)); }
+.leadership-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.leadership-card__badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; padding: 6px 14px; border-radius: 20px;
+  margin-bottom: 20px;
+}
+.leadership-card__badge--patron { background: rgba(212,168,67,0.12); color: var(--gold); border: 1px solid rgba(212,168,67,0.3); }
+.leadership-card__badge--president { background: rgba(196,16,32,0.1); color: var(--crimson); border: 1px solid rgba(196,16,32,0.2); }
+.leadership-card__photo-wrap {
+  width: 140px; height: 140px; border-radius: 50%; overflow: hidden;
+  margin: 0 auto 20px; border: 4px solid rgba(212,168,67,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+.leadership-card__photo { width: 100%; height: 100%; object-fit: cover; }
+.leadership-card__name { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--text-dark); margin-bottom: 6px; }
+.leadership-card__role { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 16px; }
+.leadership-card__desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+.leadership-card__contact { margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(212,168,67,0.2); }
+.leadership-card__contact-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--crimson); text-decoration: none; font-weight: 700; font-size: 0.9rem;
+}
+.leadership-card__contact-link:hover { color: var(--deep-burgundy); }
+
+/* Officers */
+.officers-section { background: linear-gradient(160deg, #0D2B1A 0%, #1B4332 100%); }
+.officers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.officer-card {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 18px; padding: 28px 24px;
+  backdrop-filter: blur(12px); transition: var(--transition); color: white;
+  display: flex; gap: 18px; align-items: flex-start;
+}
+.officer-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-4px); border-color: rgba(212,168,67,0.3); }
+.officer-card__photo-wrap {
+  width: 72px; height: 72px; border-radius: 50%; overflow: hidden;
+  border: 2px solid rgba(212,168,67,0.4); flex-shrink: 0;
+}
+.officer-card__photo { width: 100%; height: 100%; object-fit: cover; }
+.officer-card__name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 4px; }
+.officer-card__role { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); margin-bottom: 10px; }
+.officer-card__desc { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.6; flex: 1; }
+.officer-card__phone {
+  display: inline-flex; align-items: center; gap: 5px;
+  color: var(--gold-light); text-decoration: none; font-size: 0.8rem; font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Exec table */
+.exec-table {
+  background: white; border-radius: 16px; overflow: hidden;
+  box-shadow: var(--shadow-sm); border: 1px solid rgba(212,168,67,0.15);
+  margin-bottom: 36px;
+}
+.exec-table__header {
+  display: grid; grid-template-columns: 1fr 1fr;
+  background: linear-gradient(to right, var(--crimson), var(--deep-burgundy));
+  color: white; font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+}
+.exec-table__header span { padding: 14px 24px; }
+.exec-table__row {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid rgba(212,168,67,0.08);
+  transition: var(--transition);
+}
+.exec-table__row:hover { background: rgba(212,168,67,0.03); }
+.exec-table__role { padding: 14px 24px; font-size: 0.85rem; color: var(--text-muted); }
+.exec-table__name { padding: 14px 24px; font-size: 0.9rem; font-weight: 700; color: var(--text-dark); }
+.exec-image { text-align: center; }
+.exec-image__img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
+.exec-image__caption { margin-top: 12px; font-size: 0.82rem; color: var(--text-muted); font-style: italic; }
+
+/* Footer */
+.footer { background: #0a0a0a; color: rgba(255,255,255,0.5); }
+.footer__top { padding: 60px 0 40px; }
+.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+.footer__logo { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.footer__logo strong { display: block; color: white; font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+.footer__logo span { display: block; font-size: 0.75rem; color: rgba(255,255,255,0.4); font-weight: 600; }
+.footer__desc { font-size: 0.88rem; line-height: 1.7; max-width: 340px; }
+.footer__links-group h4 { font-family: 'Nunito', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 16px; }
+.footer__links-group a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.88rem; padding: 4px 0; transition: var(--transition); }
+.footer__links-group a:hover { color: white; }
+.footer__bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0; font-size: 0.8rem; }
+.footer__bottom p { color: rgba(255,255,255,0.3); }
+.footer__dev-credit { margin-top: 6px; font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+.footer__dev-credit a { color: rgba(212,168,67,0.6); text-decoration: none; transition: var(--transition); }
+.footer__dev-credit a:hover { color: var(--gold); }
+.exec-image__img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
+
+@media (max-width: 1024px) {
+  .officers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .navbar__nav { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,10,10,0.97); flex-direction: column; align-items: center; justify-content: center; gap: 24px; z-index: 999; }
+  .navbar__nav.open { display: flex; }
+  .navbar__link { font-size: 1.2rem; }
+  .navbar__burger { display: flex; z-index: 1001; }
+  .leadership-grid { grid-template-columns: 1fr; max-width: 420px; }
+  .officers-grid { grid-template-columns: 1fr; }
+  .officer-card { flex-direction: column; align-items: center; text-align: center; }
+  .footer__grid { grid-template-columns: 1fr; gap: 28px; }
+  .exec-table__header, .exec-table__row { grid-template-columns: 1fr 1fr; }
+}
+</style>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => { navbar?.classList.toggle('scrolled', window.scrollY > 60); });
+const burgerBtn = document.getElementById('burgerBtn');
+const navLinks = document.getElementById('navLinks');
+burgerBtn?.addEventListener('click', () => {
+  const isOpen = navLinks?.classList.toggle('open');
+  burgerBtn?.classList.toggle('open', isOpen);
+  burgerBtn?.setAttribute('aria-expanded', String(isOpen));
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+</script>
