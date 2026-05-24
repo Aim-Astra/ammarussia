@@ -5,28 +5,23 @@ import Layout from '../../layouts/Layout.astro';
 <Layout
   title="Контакты — AMMA Russia"
   description="Свяжитесь с ВсеМосковской Малаяльской Ассоциацией (AMMA Russia). Email, телефон, адрес, социальные сети."
-  lang="en"
+  lang="ru"
 >
 
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="navbar__inner container">
-    <a href="/en/" class="navbar__logo">
-      <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
-        <circle cx="21" cy="21" r="21" fill="#C41020"/>
-        <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
-        <text x="21" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Georgia">A</text>
-      </svg>
-      <span class="navbar__logo-text">AMMA Russia</span>
+    <a href="/" class="navbar__logo">
+      <img src="/images/amma-logo.png" alt="AMMA Russia" class="navbar__logo-img" />
     </a>
     <nav class="navbar__nav" id="navLinks">
-      <a href="/en/#about" class="navbar__link">About Onam</a>
-      <a href="/en/#event" class="navbar__link">Event</a>
-      <a href="/en/#artist" class="navbar__link">Artist</a>
-      <a href="/en/committee" class="navbar__link">Committee</a>
-      <a href="/en/contact" class="navbar__link navbar__link--active">Contact</a>
+      <a href="/#about" class="navbar__link">О Онам</a>
+      <a href="/#event" class="navbar__link">Мероприятие</a>
+      <a href="/#artist" class="navbar__link">Артист</a>
+      <a href="/committee" class="navbar__link">Комитет</a>
+      <a href="/contact" class="navbar__link navbar__link--active">Контакты</a>
     </nav>
-    <button class="navbar__burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -41,14 +36,14 @@ import Layout from '../../layouts/Layout.astro';
   <div class="container page-hero__content">
     <div class="page-hero__badge reveal">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      Get in touch with us
+      Напишите или позвоните нам
     </div>
     <h1 class="page-hero__title reveal" style="transition-delay:0.1s">
-      Contact<br/><span class="gold-text">Information</span>
+      Контактная<br/><span class="gold-text">информация</span>
     </h1>
     <p class="page-hero__subtitle reveal" style="transition-delay:0.2s">
-      We always welcome new participants and guests.<br/>
-      Contact us in any convenient way.
+      Мы всегда рады новым участникам и гостям.<br/>
+      Свяжитесь с нами любым удобным способом.
     </p>
   </div>
 </section>
@@ -63,10 +58,10 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div class="contact-card__content">
-          <h2 class="contact-card__title">Email</h2>
-          <p class="contact-card__subtitle">Primary address</p>
+          <h2 class="contact-card__title">Электронная почта</h2>
+          <p class="contact-card__subtitle">Основной адрес</p>
           <a href="mailto:ammarussia@mail.ru" class="contact-card__value">ammarussia@mail.ru</a>
-          <p class="contact-card__note">We will respond within 24 hours</p>
+          <p class="contact-card__note">Ответим в течение 24 часов</p>
         </div>
       </div>
 
@@ -75,15 +70,15 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.55a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
         </div>
         <div class="contact-card__content">
-          <h2 class="contact-card__title">Phone</h2>
-          <p class="contact-card__subtitle">Call during business hours</p>
+          <h2 class="contact-card__title">Телефон</h2>
+          <p class="contact-card__subtitle">Звоните в рабочее время</p>
           <div class="contact-card__phones">
             <a href="tel:+798****0221" class="contact-card__phone">
-              <strong>Dr. Binu Paniker</strong>
+              <strong>Д-р Бину Паникер</strong>
               <span>+7 985 130 0221</span>
             </a>
             <a href="tel:+792****7066" class="contact-card__phone">
-              <strong>Dr. Unnikrishnan</strong>
+              <strong>Д-р Уникришнан</strong>
               <span>+7 925 385 7066</span>
             </a>
           </div>
@@ -96,9 +91,9 @@ import Layout from '../../layouts/Layout.astro';
         </div>
         <div class="contact-card__content">
           <h2 class="contact-card__title">Telegram</h2>
-          <p class="contact-card__subtitle">Quick responses and announcements</p>
+          <p class="contact-card__subtitle">Быстрые ответы и анонсы</p>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener" class="contact-card__value">@moscowamma</a>
-          <p class="contact-card__note">Click to open the chat</p>
+          <p class="contact-card__note">Нажмите, чтобы открыть чат</p>
         </div>
       </div>
 
@@ -108,9 +103,9 @@ import Layout from '../../layouts/Layout.astro';
         </div>
         <div class="contact-card__content">
           <h2 class="contact-card__title">Instagram</h2>
-          <p class="contact-card__subtitle">Photos and videos from events</p>
+          <p class="contact-card__subtitle">Фото и видео с мероприятий</p>
           <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener" class="contact-card__value">@amma4_moscow</a>
-          <p class="contact-card__note">Follow us</p>
+          <p class="contact-card__note">Подпишитесь на нас</p>
         </div>
       </div>
 
@@ -124,13 +119,13 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row section-label-row--light">
         <span class="section-label-line section-label-line--light"></span>
-        <span class="section-label section-label--light">We on Social Media</span>
+        <span class="section-label section-label--light">Мы в социальных сетях</span>
       </div>
-      <h2 class="section-title section-title--light">Join <span class="gold-text">Us</span></h2>
+      <h2 class="section-title section-title--light">Присоединяйтесь <span class="gold-text">к нам</span></h2>
       <div class="ornament ornament--light"><span class="ornament-icon">&#10022;</span></div>
       <p class="section-subtitle section-subtitle--light">
-        Follow event announcements, watch photos and videos<br/>
-        from our festivals and stay updated on diaspora life
+        Следите за анонсами мероприятий, смотрите фото и видео<br/>
+        с наших праздников и будьте в курсе жизни диаспоры
       </p>
     </div>
 
@@ -196,9 +191,9 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row">
         <span class="section-label-line"></span>
-        <span class="section-label">Venue</span>
+        <span class="section-label">Место проведения</span>
       </div>
-      <h2 class="section-title">How to <span class="gold-text">Find Us</span></h2>
+      <h2 class="section-title">Как нас <span class="gold-text">найти</span></h2>
       <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
     </div>
 
@@ -209,9 +204,9 @@ import Layout from '../../layouts/Layout.astro';
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
           <div>
-            <strong>Vdokhnoveniye Cultural Center</strong>
-            <span>Moscow, 7 Litovsky Boulevard</span>
-            <span>Yasenevo Metro — 7 min walk</span>
+            <strong>Культурный центр «Вдохновение»</strong>
+            <span>Москва, Литовский бульвар, 7</span>
+            <span>Метро Ясенево — 7 минут пешком</span>
           </div>
         </div>
 
@@ -220,9 +215,9 @@ import Layout from '../../layouts/Layout.astro';
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
           </div>
           <div>
-            <strong>Opening Hours</strong>
-            <span>Events: from 17:00</span>
-            <span>Entry by invitation</span>
+            <strong>Время работы</strong>
+            <span>Мероприятия: с 17:00</span>
+            <span>Вход по приглашениям</span>
           </div>
         </div>
 
@@ -231,9 +226,9 @@ import Layout from '../../layouts/Layout.astro';
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div>
-            <strong>Entry Contact</strong>
-            <span>Show your invitation at the entrance</span>
-            <span>Coordination: +7 985 130 0221</span>
+            <strong>Контакт для прохода</strong>
+            <span>Покажите приглашение на входе</span>
+            <span>Координаты: +7 985 130 0221</span>
           </div>
         </div>
       </div>
@@ -241,9 +236,9 @@ import Layout from '../../layouts/Layout.astro';
       <div class="venue-map">
         <div class="venue-map__placeholder">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <p>Map</p>
+          <p>Карта</p>
           <a href="https://yandex.ru/maps/-/CCUBJ0wJxD" target="_blank" rel="noopener" class="btn btn--primary">
-            Open in Yandex Maps
+            Открыть на Яндекс Картах
           </a>
         </div>
       </div>
@@ -265,26 +260,26 @@ import Layout from '../../layouts/Layout.astro';
             </svg>
             <div>
               <strong>AMMA Russia</strong>
-              <span>All-Moscow Malayalee Association</span>
+              <span>ВсеМосковская Малаяльская Ассоциация</span>
             </div>
           </div>
           <p class="footer__desc">
-            Uniting members of the Kerala diaspora in Moscow, preserving and promoting
-            the rich cultural heritage of Malabar since 2015.
+            Объединяем представителей диаспоры Кералы в Москве, сохраняем и продвигаем
+            богатое культурное наследие Малабара с 2015 года.
           </p>
         </div>
 
         <div class="footer__links-group">
-          <h4>Navigation</h4>
-          <a href="/en/#about">About Onam</a>
-          <a href="/en/#event">Event</a>
-          <a href="/en/#artist">Artist</a>
-          <a href="/en/committee">Committee</a>
-          <a href="/en/contact">Contact</a>
+          <h4>Навигация</h4>
+          <a href="/#about">О Онам</a>
+          <a href="/#event">Мероприятие</a>
+          <a href="/#artist">Артист</a>
+          <a href="/committee">Комитет</a>
+          <a href="/contact">Контакты</a>
         </div>
 
         <div class="footer__links-group">
-          <h4>Contacts</h4>
+          <h4>Контакты</h4>
           <a href="mailto:ammarussia@mail.ru">ammarussia@mail.ru</a>
           <a href="tel:+798****0221">+7 985 130 0221</a>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">@moscowamma</a>
@@ -292,7 +287,7 @@ import Layout from '../../layouts/Layout.astro';
         </div>
 
         <div class="footer__links-group">
-          <h4>Social Media</h4>
+          <h4>Социальные сети</h4>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">Telegram</a>
           <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">Instagram</a>
           <a href="#">Facebook</a>
@@ -304,7 +299,8 @@ import Layout from '../../layouts/Layout.astro';
 
   <div class="footer__bottom">
     <div class="container">
-      <p>&copy; 2025 AMMA Russia — All-Moscow Malayalee Association. All rights reserved.</p>
+      <p>&copy; 2025 AMMA Russia — ВсеМосковская Малаяльская Ассоциация. Все права защищены.</p>
+
     </div>
   </div>
 </footer>
@@ -323,6 +319,7 @@ import Layout from '../../layouts/Layout.astro';
 }
 .navbar__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .navbar__logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; }
+.navbar__logo-img { height: 42px; width: auto; }
 .navbar__logo-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
 .navbar__nav { display: flex; gap: 4px; align-items: center; }
 .navbar__link {
@@ -460,6 +457,9 @@ import Layout from '../../layouts/Layout.astro';
 .footer__links-group a:hover { color: white; }
 .footer__bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0; font-size: 0.8rem; }
 .footer__bottom p { color: rgba(255,255,255,0.3); }
+.footer__dev-credit { margin-top: 6px; font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+.footer__dev-credit a { color: rgba(212,168,67,0.6); text-decoration: none; transition: var(--transition); }
+.footer__dev-credit a:hover { color: var(--gold); }
 
 @media (max-width: 1024px) {
   .social-grid { grid-template-columns: repeat(2, 1fr); }

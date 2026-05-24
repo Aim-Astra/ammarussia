@@ -3,14 +3,14 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout
-  title="AMMA Russia — All-Moscow Malayalee Association"
-  description="Official website of the All-Moscow Malayalee Association (AMMA). Cultural events, Kerala festivals, Indian culture in Moscow."
-  lang="en"
+  title="AMMA Russia — Все-Московская Малаялийская Ассоциация"
+  description="Официальный сайт Все-Московской Малаялийской Ассоциации (AMMA). Культурные мероприятия, фестивали Кералы, индийская культура в Москве."
+  lang="ru"
 >
 <!-- ===== NAVBAR ===== -->
 <header class="navbar" id="navbar">
   <div class="navbar__inner container">
-    <a href="/en/" class="navbar__logo">
+    <a href="/ru/" class="navbar__logo">
       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="21" cy="21" r="21" fill="#C41020"/>
         <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
@@ -20,14 +20,14 @@ import Layout from '../../layouts/Layout.astro';
     </a>
 
     <nav class="navbar__nav" id="navLinks">
-      <a href="#about" class="navbar__link">About Onam</a>
-      <a href="#event" class="navbar__link">Event</a>
-      <a href="#artist" class="navbar__link">Artist</a>
-      <a href="/en/committee" class="navbar__link">Committee</a>
-      <a href="/en/contact" class="navbar__link">Contact</a>
+      <a href="#about" class="navbar__link">О Онам</a>
+      <a href="#event" class="navbar__link">Программа</a>
+      <a href="#artist" class="navbar__link">Артист</a>
+      <a href="/ru/committee" class="navbar__link">Комитет</a>
+      <a href="/ru/contact" class="navbar__link">Контакты</a>
     </nav>
 
-    <button class="navbar__burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -60,61 +60,61 @@ import Layout from '../../layouts/Layout.astro';
   <div class="hero__content container">
     <div class="hero__badge reveal">
       <span class="hero__badge-dot"></span>
-      Kerala Harvest Festival — Onam 2025
+      Праздник Урожая Кералы — Онам 2025
     </div>
 
     <h1 class="hero__title reveal" style="transition-delay:0.1s">
-      Grand<br/>
-      <span class="hero__title-accent">Onam</span><br/>
-      <span class="hero__title-year">Celebration</span>
+      Великое<br/>
+      <span class="hero__title-accent">Онам</span><br/>
+      <span class="hero__title-year">Празднество</span>
     </h1>
 
     <p class="hero__subtitle reveal" style="transition-delay:0.2s">
-      Under the auspices of the Embassy of India in Russia<br/>
-      Organizer: All-Moscow Malayalee Association
+      Под покровительством Посольства Индии в России<br/>
+      Организатор: Все-Московская Малаялийская Ассоциация
     </p>
 
     <div class="hero__actions reveal" style="transition-delay:0.3s">
       <a href="#event" class="btn btn--primary">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-        View Program
+        Смотреть программу
       </a>
-      <a href="#about" class="btn btn--outline-light">About the Festival</a>
+      <a href="#about" class="btn btn--outline-light">О фестивале</a>
     </div>
 
     <div class="hero__meta reveal" style="transition-delay:0.4s">
       <div class="hero__meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        September 13, 2025
+        13 сентября 2025
       </div>
       <div class="hero__meta-sep">·</div>
       <div class="hero__meta-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Yasenevo, Moscow
+        Ясенево, Москва
       </div>
     </div>
 
     <div class="hero__countdown reveal" style="transition-delay:0.45s" id="heroCountdown">
-      <div class="hero__countdown-label">Time until the celebration</div>
+      <div class="hero__countdown-label">Время до начала праздника</div>
       <div class="hero__countdown-timer">
         <div class="hero__countdown-unit">
           <span class="hero__countdown-num" id="countdownDays">--</span>
-          <span class="hero__countdown-sub">days</span>
+          <span class="hero__countdown-sub">дней</span>
         </div>
         <div class="hero__countdown-sep">:</div>
         <div class="hero__countdown-unit">
           <span class="hero__countdown-num" id="countdownHours">--</span>
-          <span class="hero__countdown-sub">hours</span>
+          <span class="hero__countdown-sub">часов</span>
         </div>
         <div class="hero__countdown-sep">:</div>
         <div class="hero__countdown-unit">
           <span class="hero__countdown-num" id="countdownMins">--</span>
-          <span class="hero__countdown-sub">min</span>
+          <span class="hero__countdown-sub">мин</span>
         </div>
         <div class="hero__countdown-sep">:</div>
         <div class="hero__countdown-unit">
           <span class="hero__countdown-num" id="countdownSecs">--</span>
-          <span class="hero__countdown-sub">sec</span>
+          <span class="hero__countdown-sub">сек</span>
         </div>
       </div>
     </div>
@@ -124,7 +124,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="hero__scroll-mouse">
       <div class="hero__scroll-wheel"></div>
     </div>
-    <span>Scroll</span>
+    <span>Вниз</span>
   </div>
 </section>
 
@@ -135,26 +135,26 @@ import Layout from '../../layouts/Layout.astro';
       <div class="about__text reveal">
         <div class="section-label-row">
           <span class="section-label-line"></span>
-          <span class="section-label">History & Traditions</span>
+          <span class="section-label">История и традиции</span>
         </div>
-        <h2 class="section-title">What is <span class="gold-text">Onam</span></h2>
+        <h2 class="section-title">Что такое <span class="gold-text">Онам</span></h2>
         <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
 
         <p class="about__lead">
-          <strong>Onam</strong> is the largest and oldest festival of Kerala, India,
-          celebrated for over <strong>4,000 years</strong>. This harvest festival
-          unites people of all ages, castes, and creeds.
+          <strong>Онам</strong> — самый крупный и древний праздник Кералы, Индия,
+          который отмечается уже более <strong>4 000 лет</strong>. Этот праздник урожая
+          объединяет людей всех возрастов, каст и вероисповеданий.
         </p>
         <p>
-          The festival commemorates the legendary <em>King Mahabali</em>,
-          revered as a symbol of a golden age, and the avatar of Vishnu — <em>Vamana</em>.
-          Every home is adorned with traditional <em>pookalam</em> — floral
-          rangoli compositions, and the table overflows with the feast of <em>onasadya</em>.
+          Фестиваль посвящён легендарному <em>царю Махабали</em>,
+          почитаемому как символ золотого века, и аватаре Вишну — <em>Вамане</em>.
+          В каждом доме украшают традиционными <em>пукалама</em> — цветочными
+          композициями из лепестков, а столы ломятся от яств <em>онасадьи</em>.
         </p>
         <p>
-          Traditional snake boat races <em>nallavakettu</em>,
-          vibrant cultural performances, and an unforgettable atmosphere of unity
-          make Onam a truly unique celebration.
+          Традиционные гонки на змеиных лодках <em>наллаваккетту</em>,
+          яркие культурные представления и незабываемая атмосфера единства
+          делают Онам по-настоящему уникальным праздником.
         </p>
 
         <div class="about__facts">
@@ -163,8 +163,8 @@ import Layout from '../../layouts/Layout.astro';
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div>
-              <strong>4,000+ years</strong>
-              <span>of festival history</span>
+              <strong>Более 4 000 лет</strong>
+              <span>истории праздника</span>
             </div>
           </div>
           <div class="fact">
@@ -172,8 +172,8 @@ import Layout from '../../layouts/Layout.astro';
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
             <div>
-              <strong>All communities</strong>
-              <span>celebrate together</span>
+              <strong>Все общины</strong>
+              <span>празднуют вместе</span>
             </div>
           </div>
           <div class="fact">
@@ -181,8 +181,8 @@ import Layout from '../../layouts/Layout.astro';
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
             </div>
             <div>
-              <strong>13 Indian states</strong>
-              <span>celebrate Onam</span>
+              <strong>13 штатов Индии</strong>
+              <span>отмечают Онам</span>
             </div>
           </div>
         </div>
@@ -192,20 +192,20 @@ import Layout from '../../layouts/Layout.astro';
         <div class="pookalam-photo-wrap">
           <img
             src="/images/pookalam-mmx.jpg"
-            alt="Traditional Onam Pookalam — sacred floral composition of Marigold petals welcoming King Mahabali"
+            alt="Традиционный пукалама Онам — священная цветочная композиция из лепестков бархатцев, встречающая царя Махабали"
             class="pookalam-photo"
             loading="lazy"
           />
         </div>
         <p class="about__visual-caption">
-          Pookalam — sacred floral composition of Marigold petals<br/>
-          <em>welcoming King Mahabali</em>
+          Пукалама — священная цветочная композиция из лепестков бархатцев<br/>
+          <em>встречающая царя Махабали</em>
         </p>
 
         <div class="about__quote">
           <blockquote>
-            "Onam is when the whole of Kerala gathers at one table,
-            no matter where in the world it is."
+            «Онам — это когда вся Керала собирается за одним столом,
+            независимо от того, где в мире она находится.»
           </blockquote>
         </div>
       </div>
@@ -220,13 +220,13 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row section-label-row--light">
         <span class="section-label-line section-label-line--light"></span>
-        <span class="section-label section-label--light">Event Information</span>
+        <span class="section-label section-label--light">Информация о мероприятии</span>
       </div>
-      <h2 class="section-title section-title--light">Festival <span class="gold-text">Program</span></h2>
+      <h2 class="section-title section-title--light">Программа <span class="gold-text">фестиваля</span></h2>
       <div class="ornament ornament--light"><span class="ornament-icon">&#10022;</span></div>
       <p class="section-subtitle section-subtitle--light">
-        An unforgettable evening dedicated to the culture and traditions of Kerala,<br/>
-        featuring the world-renowned singer Vidhu Prathap
+        Незабываемый вечер, посвящённый культуре и традициям Кералы,<br/>
+        с участием всемирно известного певца Видху Пратапа
       </p>
     </div>
 
@@ -238,8 +238,8 @@ import Layout from '../../layouts/Layout.astro';
           <span>17:00</span>
         </div>
         <div class="event-step__card">
-          <h3>Guest Reception</h3>
-          <p>Meet at the Vdokhnoveniye Cultural Center. At the entrance you will be welcomed with a traditional greeting and garland.</p>
+          <h3>Встреча гостей</h3>
+          <p>Сбор у Культурного центра «Вдохновение». На входе вас встретят традиционным приветствием и гирляндой.</p>
         </div>
       </div>
 
@@ -248,8 +248,8 @@ import Layout from '../../layouts/Layout.astro';
           <span>17:30</span>
         </div>
         <div class="event-step__card">
-          <h3>Grand Opening</h3>
-          <p>Welcome speech by H.E. Dr. Vinay Kumar, Ambassador of India to Russia, and the President of AMMA Russia.</p>
+          <h3>Торжественное открытие</h3>
+          <p>Приветственная речь Его Превосходительства доктора Виная Кумара, Чрезвычайного и Полномочного Посла Индии в России, и Президента AMMA Russia.</p>
         </div>
       </div>
 
@@ -260,10 +260,10 @@ import Layout from '../../layouts/Layout.astro';
         <div class="event-step__card event-step__card--featured">
           <div class="event-step__featured-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            Main Event of the Evening
+            Главное событие вечера
           </div>
-          <h3>Concert "IT'S VIDHU PRATAP"</h3>
-          <p>Live music show by the world-renowned Indian singer Vidhu Prathap and his band. Hits from Malayalam, Tamil, and Telugu cinema.</p>
+          <h3>Концерт «ЭТО ВИДХУ ПРАТАП»</h3>
+          <p>Концертное шоу всемирно известного индийского певца Видху Пратапа и его группы. Хиты кино на малаялам, тамильском и телугу.</p>
         </div>
       </div>
 
@@ -272,8 +272,8 @@ import Layout from '../../layouts/Layout.astro';
           <span>19:30</span>
         </div>
         <div class="event-step__card">
-          <h3>Cultural Program</h3>
-          <p>Traditional Kathakali, Puthu dances and folk songs of Kerala performed by members of the diaspora.</p>
+          <h3>Культурная программа</h3>
+          <p>Традиционные танцы Катхакали, Путту и народные песни Кералы в исполнении членов диаспоры.</p>
         </div>
       </div>
 
@@ -282,8 +282,8 @@ import Layout from '../../layouts/Layout.astro';
           <span>20:30</span>
         </div>
         <div class="event-step__card">
-          <h3>Onasadya Feast</h3>
-          <p>Traditional vegetarian feast served on banana leaves. Over 26 authentic South Indian dishes, prepared with love.</p>
+          <h3>Трапеза Онасадья</h3>
+          <p>Традиционный вегетарианский пир, поданный на банановых листьях. Более 26 аутентичных южноиндийских блюд, приготовленных с любовью.</p>
         </div>
       </div>
     </div>
@@ -294,8 +294,8 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <div>
-          <strong>Date</strong>
-          <span>Saturday, September 13, 2025</span>
+          <strong>Дата</strong>
+          <span>Суббота, 13 сентября 2025</span>
         </div>
       </div>
       <div class="event-info-card">
@@ -303,7 +303,7 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
         </div>
         <div>
-          <strong>Time</strong>
+          <strong>Время</strong>
           <span>17:00 — 22:00</span>
         </div>
       </div>
@@ -312,8 +312,8 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
         </div>
         <div>
-          <strong>Venue</strong>
-          <span>KC "Vdokhnoveniye", 7 Litovsky Blvd</span>
+          <strong>Место</strong>
+          <span>КЦ «Вдохновение», 7-й Литовский пер.</span>
         </div>
       </div>
       <div class="event-info-card event-info-card--highlight">
@@ -321,8 +321,8 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
         <div>
-          <strong>Honored Guest</strong>
-          <span>H.E. Dr. Vinay Kumar</span>
+          <strong>Почётный гость</strong>
+          <span>Его Превосходительство доктор Винай Кумар</span>
         </div>
       </div>
     </div>
@@ -333,8 +333,8 @@ import Layout from '../../layouts/Layout.astro';
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div class="event-cta__text">
-          <h3>Entry by Invitation</h3>
-          <p>Seats are limited. Contact the organizers to receive an invitation.</p>
+          <h3>Вход по приглашениям</h3>
+          <p>Количество мест ограничено. Свяжитесь с организаторами, чтобы получить приглашение.</p>
         </div>
       </div>
       <div class="event-cta__contacts">
@@ -360,7 +360,7 @@ import Layout from '../../layouts/Layout.astro';
           <div class="artist__portrait-frame">
             <img
               src="/images/vidhu-prathap.jpg"
-              alt="Vidhu Prathap — World-renowned Indian singer"
+              alt="Видху Пратап — всемирно известный индийский певец"
               class="artist__portrait-img"
               loading="lazy"
             />
@@ -368,7 +368,7 @@ import Layout from '../../layouts/Layout.astro';
           </div>
           <div class="artist__portrait-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            Headliner — Onam 2025
+            Хедлайнер — Онам 2025
           </div>
         </div>
 
@@ -388,51 +388,51 @@ import Layout from '../../layouts/Layout.astro';
       <div class="artist__content reveal" style="transition-delay:0.2s">
         <div class="section-label-row">
           <span class="section-label-line"></span>
-          <span class="section-label">Star Guest</span>
+          <span class="section-label">Звёздный гость</span>
         </div>
-        <h2 class="section-title">Vidhu <span class="gold-text">Prathap</span></h2>
+        <h2 class="section-title">Видху <span class="gold-text">Пратап</span></h2>
         <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
 
         <blockquote class="artist__quote">
-          "Music is a bridge between cultures. When I sing in Malayalam in Moscow,
-          I feel that borders disappear and only the voice and the heart remain."
+          «Музыка — это мост между культурами. Когда я пою на малаялам в Москве,
+          я чувствую, что границы исчезают и остаются только голос и сердце.»
         </blockquote>
 
         <p class="artist__bio">
-          Vidhu Prathap is one of the most sought-after <strong>Indian singers</strong>,
-          whose voice has been featured in over <strong>100 film songs</strong>.
-          He sings in Malayalam, Tamil, Kannada, and Telugu — and every performance
-          becomes a hit.
+          Видху Пратап — один из самых востребованных <strong>индийских певцов</strong>,
+          чей голос звучит более чем в <strong>100 кинохитах</strong>.
+          Он поёт на малаялам, тамильском, каннада и телугу — и каждое выступление
+          становится настоящим хитом.
         </p>
         <p class="artist__bio">
-          Over <strong>20 years of career</strong>, Vidhu Prathap has captured the hearts of
-          millions of listeners in India and abroad, performing at the largest
-          music festivals and shows. His concerts are not just music —
-          they are true emotional journeys.
+          За <strong>более 20 лет карьеры</strong> Видху Пратап покорил сердца
+          миллионов слушателей в Индии и за рубежом, выступая на крупнейших
+          музыкальных фестивалях и шоу. Его концерты — это не просто музыка,
+          это настоящие эмоциональные путешествия.
         </p>
 
         <div class="artist__stats">
           <div class="artist__stat">
             <span class="artist__stat-num">100+</span>
-            <span class="artist__stat-label">films</span>
+            <span class="artist__stat-label">фильмов</span>
           </div>
           <div class="artist__stat">
             <span class="artist__stat-num">4</span>
-            <span class="artist__stat-label">languages</span>
+            <span class="artist__stat-label">языка</span>
           </div>
           <div class="artist__stat">
             <span class="artist__stat-num">20+</span>
-            <span class="artist__stat-label">years career</span>
+            <span class="artist__stat-label">лет карьеры</span>
           </div>
           <div class="artist__stat">
             <span class="artist__stat-num">∞</span>
-            <span class="artist__stat-label">hits</span>
+            <span class="artist__stat-label">хитов</span>
           </div>
         </div>
 
         <div class="artist__actions">
-          <a href="#event" class="btn btn--primary">View Program</a>
-          <a href="https://t.me/moscowamma" class="btn btn--outline" target="_blank" rel="noopener">Join Us</a>
+          <a href="#event" class="btn btn--primary">Смотреть программу</a>
+          <a href="https://t.me/moscowamma" class="btn btn--outline" target="_blank" rel="noopener">Присоединяйтесь</a>
         </div>
       </div>
     </div>
@@ -445,23 +445,23 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row section-label-row--light">
         <span class="section-label-line section-label-line--light"></span>
-        <span class="section-label section-label--light">Leadership</span>
+        <span class="section-label section-label--light">Руководство</span>
       </div>
-      <h2 class="section-title section-title--light">Executive Committee <span class="gold-text">AMMA</span></h2>
+      <h2 class="section-title section-title--light">Исполнительный комитет <span class="gold-text">AMMA</span></h2>
       <div class="ornament ornament--light"><span class="ornament-icon">&#10022;</span></div>
       <p class="section-subtitle section-subtitle--light">
-        Meet the team that organizes cultural events<br/>
-        and supports the Malayalee diaspora in Moscow
+        Познакомьтесь с командой, которая организует культурные мероприятия<br/>
+        и поддерживает малаялийскую диаспору в Москве
       </p>
     </div>
 
     <div class="committee-preview">
       <div class="committee-preview__grid">
         {[
-          { name: 'Dr. Cherian Ipan', role: 'Patron', img: '/images/cherian-ipan.jpg' },
-          { name: 'Dr. Binu Paniker', role: 'President', img: '/images/binu-paniker.jpg' },
-          { name: 'Dr. Nushad', role: 'General Secretary', img: '/images/nushad.jpg' },
-          { name: 'Dr. Unnikrishnan', role: 'Vice President', img: '/images/unnikrishnan.jpg' },
+          { name: 'Доктор Чериан Ипан', role: 'Попечитель', img: '/images/cherian-ipan.jpg' },
+          { name: 'Доктор Бину Паникер', role: 'Президент', img: '/images/binu-paniker.jpg' },
+          { name: 'Доктор Нушад', role: 'Генеральный секретарь', img: '/images/nushad.jpg' },
+          { name: 'Доктор Уникришнан', role: 'Вице-президент', img: '/images/unnikrishnan.jpg' },
         ].map((p, i) => (
           <div class="committee-preview__card reveal" style={`transition-delay:${i * 0.1}s`}>
             <div class="committee-preview__photo-wrap">
@@ -474,9 +474,9 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <div class="committee-preview__cta reveal">
-        <a href="/en/committee" class="btn btn--outline-light">
+        <a href="/ru/committee" class="btn btn--outline-light">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          Full Committee
+          Весь комитет
         </a>
       </div>
     </div>
@@ -497,26 +497,26 @@ import Layout from '../../layouts/Layout.astro';
             </svg>
             <div>
               <strong>AMMA Russia</strong>
-              <span>All-Moscow Malayalee Association</span>
+              <span>Все-Московская Малаялийская Ассоциация</span>
             </div>
           </div>
           <p class="footer__desc">
-            Uniting members of the Kerala diaspora in Moscow, preserving and promoting
-            the rich cultural heritage of Malabar since 2015.
+            Объединяем членов керальской диаспоры в Москве, сохраняя и продвигая
+            богатое культурное наследие Малабара с 2015 года.
           </p>
         </div>
 
         <div class="footer__links-group">
-          <h4>Navigation</h4>
-          <a href="#about">About Onam</a>
-          <a href="#event">Event</a>
-          <a href="#artist">Artist</a>
-          <a href="/en/committee">Committee</a>
-          <a href="/en/contact">Contact</a>
+          <h4>Навигация</h4>
+          <a href="#about">О Онам</a>
+          <a href="#event">Программа</a>
+          <a href="#artist">Артист</a>
+          <a href="/ru/committee">Комитет</a>
+          <a href="/ru/contact">Контакты</a>
         </div>
 
         <div class="footer__links-group">
-          <h4>Contacts</h4>
+          <h4>Контакты</h4>
           <a href="mailto:ammarussia@mail.ru">ammarussia@mail.ru</a>
           <a href="tel:+798****0221">+7 985 130 0221</a>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">@moscowamma</a>
@@ -524,7 +524,7 @@ import Layout from '../../layouts/Layout.astro';
         </div>
 
         <div class="footer__links-group">
-          <h4>Social Media</h4>
+          <h4>Социальные сети</h4>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">Telegram</a>
           <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">Instagram</a>
           <a href="https://www.facebook.com/moscowamma" target="_blank" rel="noopener">Facebook</a>
@@ -536,7 +536,7 @@ import Layout from '../../layouts/Layout.astro';
 
   <div class="footer__bottom">
     <div class="container">
-      <p>&copy; 2025 AMMA Russia — All-Moscow Malayalee Association. All rights reserved.</p>
+      <p>© 2025 AMMA Russia — Все-Московская Малаялийская Ассоциация. Все права защищены.</p>
     </div>
   </div>
 </footer>

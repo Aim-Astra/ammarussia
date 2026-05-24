@@ -5,28 +5,23 @@ import Layout from '../../layouts/Layout.astro';
 <Layout
   title="Исполнительный комитет — AMMA Russia"
   description="Познакомьтесь с руководством ВсеМосковской Малаяльской Ассоциации. Патроны, президент, вице-президент, секретари и члены комитета АММА."
-  lang="en"
+  lang="ru"
 >
 
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="navbar__inner container">
-    <a href="/en/" class="navbar__logo">
-      <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
-        <circle cx="21" cy="21" r="21" fill="#C41020"/>
-        <circle cx="21" cy="21" r="16" fill="none" stroke="#D4A843" stroke-width="1.5"/>
-        <text x="21" y="27" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Georgia">A</text>
-      </svg>
-      <span class="navbar__logo-text">AMMA Russia</span>
+    <a href="/ru/" class="navbar__logo">
+      <img src="/images/amma-logo.png" alt="AMMA Russia" class="navbar__logo-img" />
     </a>
     <nav class="navbar__nav" id="navLinks">
-      <a href="/en/#about" class="navbar__link">About Onam</a>
-      <a href="/en/#event" class="navbar__link">Event</a>
-      <a href="/en/#artist" class="navbar__link">Artist</a>
-      <a href="/en/committee" class="navbar__link navbar__link--active">Committee</a>
-      <a href="/en/contact" class="navbar__link">Contact</a>
+      <a href="/ru/#about" class="navbar__link">О Онам</a>
+      <a href="/ru/#event" class="navbar__link">Мероприятие</a>
+      <a href="/ru/#artist" class="navbar__link">Артист</a>
+      <a href="/ru/committee" class="navbar__link navbar__link--active">Комитет</a>
+      <a href="/ru/contact" class="navbar__link">Контакты</a>
     </nav>
-    <button class="navbar__burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+    <button class="navbar__burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -41,17 +36,17 @@ import Layout from '../../layouts/Layout.astro';
   <div class="container page-hero__content">
     <div class="page-hero__badge reveal">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-      All-Moscow Malayalee Association
+      ВсеМосковская Малаяльская Ассоциация
     </div>
     <h1 class="page-hero__title reveal" style="transition-delay:0.1s">
-      Executive<br/><span class="gold-text">Committee</span>
+      Исполнительный<br/><span class="gold-text">Комитет</span>
     </h1>
     <p class="page-hero__subtitle reveal" style="transition-delay:0.2s">
-      A team of like-minded people who organize cultural events,<br/>
-      support the diaspora, and preserve the traditions of Kerala in Moscow
+      Команда единомышленников, которая организует культурные мероприятия,<br/>
+      поддерживает диаспору и сохраняет традиции Кералы в Москве
     </p>
     <div class="page-hero__term reveal" style="transition-delay:0.3s">
-      Term of office: <strong>2025–2027</strong>
+      Срок полномочий: <strong>2025–2027</strong>
     </div>
   </div>
 </section>
@@ -63,32 +58,32 @@ import Layout from '../../layouts/Layout.astro';
       <div class="leadership-card leadership-card--patron reveal">
         <div class="leadership-card__badge leadership-card__badge--patron">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Patron
+          Покровитель
         </div>
         <div class="leadership-card__photo-wrap">
-          <img src="/images/cherian-ipan.jpg" alt="Dr. Cherian Ipan" class="leadership-card__photo" loading="lazy" />
+          <img src="/images/cherian-ipan.jpg" alt="Д-р Чериан Ипан" class="leadership-card__photo" loading="lazy" />
         </div>
-        <h2 class="leadership-card__name">Dr. Cherian Ipan</h2>
-        <p class="leadership-card__role">Patron</p>
+        <h2 class="leadership-card__name">Д-р Чериан Ипан</h2>
+        <p class="leadership-card__role">Покровитель</p>
         <p class="leadership-card__desc">
-          Provides strategic leadership and support to the association,
-          serving as a bridge between the Indian community in Russia.
+          Оказывает стратегическое руководство и поддержку ассоциации,
+          является связующим звеном с индийским сообществом в России.
         </p>
       </div>
 
       <div class="leadership-card leadership-card--president reveal" style="transition-delay:0.1s">
         <div class="leadership-card__badge leadership-card__badge--president">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          President
+          Президент
         </div>
         <div class="leadership-card__photo-wrap">
-          <img src="/images/binu-paniker.jpg" alt="Dr. Binu Paniker" class="leadership-card__photo" loading="lazy" />
+          <img src="/images/binu-paniker.jpg" alt="Д-р Бину Паникер" class="leadership-card__photo" loading="lazy" />
         </div>
-        <h2 class="leadership-card__name">Dr. Binu Paniker</h2>
-        <p class="leadership-card__role">President</p>
+        <h2 class="leadership-card__name">Д-р Бину Паникер</h2>
+        <p class="leadership-card__role">Президент</p>
         <p class="leadership-card__desc">
-          Leads the association, coordinates the activities of all committee members
-          and represents AMMA at official events.
+          Возглавляет ассоциацию, координирует деятельность всех членов комитета
+          и представляет АММА на официальных мероприятиях.
         </p>
         <div class="leadership-card__contact">
           <a href="tel:+798****0221" class="leadership-card__contact-link">
@@ -107,47 +102,47 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row">
         <span class="section-label-line"></span>
-        <span class="section-label">Leadership</span>
+        <span class="section-label">Руководство</span>
       </div>
-      <h2 class="section-title section-title--light">Secretaries & <span class="gold-text">Vice President</span></h2>
+      <h2 class="section-title section-title--light">Секретари и <span class="gold-text">вице-президент</span></h2>
       <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
     </div>
 
     <div class="officers-grid">
       {[
         {
-          name: 'Dr. Unnikrishnan',
-          role: 'Vice President',
+          name: 'Д-р Уникришнан',
+          role: 'Вице-президент',
           img: '/images/unnikrishnan.jpg',
-          desc: 'Coordinates the work of vice presidents and oversees diaspora relations. Contact for membership matters.',
+          desc: 'Координирует работу вице-президентов и курирует связи с диаспорой. Контакт для членских вопросов.',
           phone: '+7 925 385 7066',
         },
         {
-          name: 'Dr. Nushad',
-          role: 'General Secretary',
+          name: 'Д-р Нушад',
+          role: 'Генеральный секретарь',
           img: '/images/nushad.jpg',
-          desc: 'Manages the day-to-day activities of the association, organizes committee meetings, and maintains documentation.',
+          desc: 'Управляет текущей деятельностью ассоциации, организует заседания комитета и ведёт документацию.',
           phone: null,
         },
         {
-          name: 'Dr. Lakshmi Aravind',
-          role: 'Cultural Secretary',
+          name: 'Д-р Лакшми Аравинд',
+          role: 'Культурный секретарь',
           img: '/images/lakshmi-aravind.jpg',
-          desc: 'Organizes cultural events, coordinates dance and music programs, and manages festival celebrations.',
+          desc: 'Организует культурные мероприятия, координирует танцевальные и музыкальные программы, фестивали.',
           phone: null,
         },
         {
-          name: 'Mr. Vimal',
-          role: 'Finance Secretary',
+          name: 'Г-н Вимал',
+          role: 'Финансовый секретарь',
           img: '/images/vimal.jpg',
-          desc: 'Manages the finances of the association, prepares event budgets, and reports for the committee.',
+          desc: 'Управляет финансами ассоциации, готовит бюджеты мероприятий и отчёты для комитета.',
           phone: null,
         },
         {
-          name: 'Mr. Zacharia',
-          role: 'Joint Secretary',
+          name: 'Г-н Закария',
+          role: 'Совместный секретарь',
           img: '/images/zakaria.jpg',
-          desc: 'Assists the General Secretary, manages correspondence, and helps coordinate events.',
+          desc: 'Содействует генеральному секретарю, ведёт переписку и помогает в координации мероприятий.',
           phone: null,
         },
       ].map((p, i) => (
@@ -178,25 +173,25 @@ import Layout from '../../layouts/Layout.astro';
     <div class="section-header reveal">
       <div class="section-label-row">
         <span class="section-label-line"></span>
-        <span class="section-label">Full Composition</span>
+        <span class="section-label">Полный состав</span>
       </div>
-      <h2 class="section-title">Executive Committee <span class="gold-text">2025–2027</span></h2>
+      <h2 class="section-title">Исполнительный комитет <span class="gold-text">2025–2027</span></h2>
       <div class="ornament"><span class="ornament-icon">&#10022;</span></div>
     </div>
 
     <div class="exec-table reveal">
       <div class="exec-table__header">
-        <span>Position</span>
-        <span>Name</span>
+        <span>Должность</span>
+        <span>Имя</span>
       </div>
       {[
-        ['Patron', 'Dr. Cherian Ipan'],
-        ['President', 'Dr. Binu Paniker'],
-        ['General Secretary', 'Dr. Nushad'],
-        ['Vice President', 'Dr. Unnikrishnan'],
-        ['Cultural Secretary', 'Dr. Lakshmi Aravind'],
-        ['Finance Secretary', 'Mr. Vimal'],
-        ['Joint Secretary', 'Mr. Zacharia'],
+        ['Покровитель', 'Д-р Чериан Ипан'],
+        ['Президент', 'Д-р Бину Паникер'],
+        ['Генеральный секретарь', 'Д-р Нушад'],
+        ['Вице-президент', 'Д-р Уникришнан'],
+        ['Культурный секретарь', 'Д-р Лакшми Аравинд'],
+        ['Финансовый секретарь', 'Г-н Вимал'],
+        ['Совместный секретарь', 'Г-н Закария'],
       ].map((row, i) => (
         <div class="exec-table__row" style={`transition-delay:${i * 0.05}s`}>
           <span class="exec-table__role">{row[0]}</span>
@@ -207,13 +202,13 @@ import Layout from '../../layouts/Layout.astro';
 
     <div class="exec-image reveal">
       <img
-        src="/images/committee-group.jpg"
-        alt="Full composition of the AMMA Executive Committee 2025-2027"
+        src="/images/amma-association-executive-committee.jpg"
+        alt="Полный состав Исполнительного комитета АММА 2025-2027"
         class="exec-image__img"
         loading="lazy"
       />
       <p class="exec-image__caption">
-        Full composition of the AMMA Russia Executive Committee 2025–2027
+        Полный состав Исполнительного комитета АММА Russia 2025–2027
       </p>
     </div>
   </div>
@@ -233,26 +228,26 @@ import Layout from '../../layouts/Layout.astro';
             </svg>
             <div>
               <strong>AMMA Russia</strong>
-              <span>All-Moscow Malayalee Association</span>
+              <span>ВсеМосковская Малаяльская Ассоциация</span>
             </div>
           </div>
           <p class="footer__desc">
-            Uniting members of the Kerala diaspora in Moscow, preserving and promoting
-            the rich cultural heritage of Malabar since 2015.
+            Объединяем представителей диаспоры Кералы в Москве, сохраняем и продвигаем
+            богатое культурное наследие Малабара с 2015 года.
           </p>
         </div>
 
         <div class="footer__links-group">
-          <h4>Navigation</h4>
-          <a href="/en/#about">About Onam</a>
-          <a href="/en/#event">Event</a>
-          <a href="/en/#artist">Artist</a>
-          <a href="/en/committee">Committee</a>
-          <a href="/en/contact">Contact</a>
+          <h4>Навигация</h4>
+          <a href="/ru/#about">О Онам</a>
+          <a href="/ru/#event">Мероприятие</a>
+          <a href="/ru/#artist">Артист</a>
+          <a href="/ru/committee">Комитет</a>
+          <a href="/ru/contact">Контакты</a>
         </div>
 
         <div class="footer__links-group">
-          <h4>Contacts</h4>
+          <h4>Контакты</h4>
           <a href="mailto:ammarussia@mail.ru">ammarussia@mail.ru</a>
           <a href="tel:+798****0221">+7 985 130 0221</a>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">@moscowamma</a>
@@ -260,7 +255,7 @@ import Layout from '../../layouts/Layout.astro';
         </div>
 
         <div class="footer__links-group">
-          <h4>Social Media</h4>
+          <h4>Социальные сети</h4>
           <a href="https://t.me/moscowamma" target="_blank" rel="noopener">Telegram</a>
           <a href="https://www.instagram.com/amma4_moscow" target="_blank" rel="noopener">Instagram</a>
           <a href="#">Facebook</a>
@@ -272,7 +267,8 @@ import Layout from '../../layouts/Layout.astro';
 
   <div class="footer__bottom">
     <div class="container">
-      <p>&copy; 2025 AMMA Russia — All-Moscow Malayalee Association. All rights reserved.</p>
+      <p>&copy; 2025 AMMA Russia — ВсеМосковская Малаяльская Ассоциация. Все права защищены.</p>
+
     </div>
   </div>
 </footer>
@@ -293,6 +289,7 @@ import Layout from '../../layouts/Layout.astro';
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .navbar__logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; }
+.navbar__logo-img { height: 42px; width: auto; }
 .navbar__logo-text { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; }
 .navbar__nav { display: flex; gap: 4px; align-items: center; }
 .navbar__link {
@@ -431,7 +428,7 @@ import Layout from '../../layouts/Layout.astro';
 .exec-table__role { padding: 14px 24px; font-size: 0.85rem; color: var(--text-muted); }
 .exec-table__name { padding: 14px 24px; font-size: 0.9rem; font-weight: 700; color: var(--text-dark); }
 .exec-image { text-align: center; }
-.exec-image__img { width: 100%; max-height: 280px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
+.exec-image__img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
 .exec-image__caption { margin-top: 12px; font-size: 0.82rem; color: var(--text-muted); font-style: italic; }
 
 /* Footer */
@@ -447,6 +444,10 @@ import Layout from '../../layouts/Layout.astro';
 .footer__links-group a:hover { color: white; }
 .footer__bottom { border-top: 1px solid rgba(255,255,255,0.06); padding: 20px 0; font-size: 0.8rem; }
 .footer__bottom p { color: rgba(255,255,255,0.3); }
+.footer__dev-credit { margin-top: 6px; font-size: 0.78rem; color: rgba(255,255,255,0.25); }
+.footer__dev-credit a { color: rgba(212,168,67,0.6); text-decoration: none; transition: var(--transition); }
+.footer__dev-credit a:hover { color: var(--gold); }
+.exec-image__img { width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; box-shadow: var(--shadow-md); }
 
 @media (max-width: 1024px) {
   .officers-grid { grid-template-columns: repeat(2, 1fr); }
